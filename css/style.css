@@ -249,7 +249,9 @@ span {
   margin-right: 10px;
   grid-template-columns: 0.14fr 1fr;
 }
-
+.contact{
+  padding-top: 30px;
+}
 .contact-content img {
   width: 40px;
   height: 40px;
@@ -357,5 +359,7 @@ p {
   .item.reverse {
     flex-direction: column;
   }
-
+  .contact{
+    padding-top:10px;
+  }
 }
