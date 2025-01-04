@@ -1,13 +1,4 @@
-/* .rubik-vinyl-regular {
-    font-family: "Rubik Vinyl", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .baskervville-regular {
-    font-family: "Baskervville", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+/* 
     <a href="https://www.flaticon.com/free-icons/breed" title="breed icons">Breed icons created by Maxim Kulikov - Flaticon</a>
     <a href="https://www.flaticon.com/free-icons/university" title="university icons">University icons created by orvipixel - Flaticon</a>
     <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Nualnoi Kinkaeo - Flaticon</a>
@@ -15,23 +6,17 @@
     <a href="https://www.flaticon.com/free-icons/coder" title="coder icons">Coder icons created by HAJICON - Flaticon</a>
     <a href="https://www.flaticon.com/free-icons/multimedia" title="multimedia icons">Multimedia icons created by Uniconlabs - Flaticon</a>
    */
-  /* .gradient-background{
-    background: rgb(9,75,121);
-    background: linear-gradient(180deg, rgba(9,75,121,1) 0%, rgba(2,0,36,1) 100%);
-   } */
-/* #FFDFD6
-   #E3A5C7
-   #B692C2
-   #694F8E */
 * {
   margin: 0;
   padding: 0;
   font-family: "Baskervville", serif;
   box-sizing: border-box;
 }
-body{
-  line-height:1.6;
+
+body {
+  line-height: 1.6;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -53,7 +38,7 @@ body{
 
 .navbar {
   display: flex;
-  gap:2rem;
+  gap: 2rem;
 }
 
 .navbar a {
@@ -63,18 +48,16 @@ body{
   text-transform: uppercase;
 }
 
-.header-div{
-  display:grid;
-  gap:20px;
+.header-div {
+  display: grid;
+  gap: 20px;
   grid-template-columns: 0.2fr 1fr;
 }
 
-/* Hidden Checkbox */
 .menu-toggle {
   display: none;
 }
 
-/* Hamburger Menu Icon */
 .menu-icon {
   display: none;
   font-size: 2.5rem;
@@ -85,7 +68,7 @@ body{
 /*Home*/
 .Main_container {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   min-height: 100vh;
   gap: 2rem;
   background: linear-gradient(180deg, #3F2E3E 3%, #E3A5C7 100%);
@@ -93,46 +76,47 @@ body{
 
 .text_container {
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: flex-start; 
-  padding: 2rem; 
-  color:  #3F2E3E; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  color: #3F2E3E;
 }
 
 .text_container h1 {
-  font-size: 4rem; 
-  margin-bottom: 1.5rem; 
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
 }
-span{
-  font-weight:normal;
+
+span {
+  font-weight: normal;
   font-family: "Rubik Vinyl", serif;
 }
+
 .text_container p {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
 
 .image_container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .image_container img {
-  width: 100%; 
-  max-width: 400px; 
+  width: 100%;
+  max-width: 300px;
   border-radius: 10px;
-  margin-top:2rem;
 }
 
 /* Skills */
 .skill-container {
   padding: 30px;
   background-color: #3F2E3E;
-  color:#FFDFD6;
+  color: #FFDFD6;
   min-height: 100vh;
 }
-
 
 .skills h1 {
   font-size: 4rem;
@@ -143,19 +127,20 @@ span{
 
 .grid-container {
   display: grid;
-  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
+
 .grid-item {
-  background:  #FFDFD6;
+  background: #FFDFD6;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: left;
   color: #3F2E3E;
 }
 
-.grid-item > img {
+.grid-item>img {
   width: 200px;
   margin-bottom: 20px;
 }
@@ -163,9 +148,17 @@ span{
 .grid-item .text {
   text-align: left;
 }
-.text p{
-  font-size: 1.2rem;;
+
+.text p {
+  font-size: 1.2rem;
+  ;
 }
+
+.text img {
+  width: 40px;
+  height: 40px;
+}
+
 .grid-item h2 {
   font-size: 3rem;
   margin-bottom: 20px;
@@ -173,7 +166,7 @@ span{
 
 .grid-item h3 {
   font-size: 2rem;
-  margin-bottom: 0.5rem 0;;
+  margin-bottom: 0.5rem 0;
 }
 
 .grid-item ul {
@@ -181,20 +174,24 @@ span{
 }
 
 .grid-item ul li {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 5px;
 }
-.text > div{
-  display:grid;
+
+.text>div {
+  display: grid;
   grid-template-columns: 0.1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  ;
+  gap: 5px;
 }
 
 /* Projects */
 .container {
   display: grid;
   gap: 20px;
-  padding:20px;
-  
+  padding: 20px;
 }
 
 .item {
@@ -203,21 +200,24 @@ span{
   align-items: center;
   gap: 20px;
   background: #FFDFD6;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .item img {
-  width:200px;
+  width: 200px;
   border-radius: 10px;
 }
-.item.reverse{
+
+.item.reverse {
   flex-direction: row-reverse;
 }
+
 .item .text {
-  flex:1;
+  flex: 1;
 }
+
 .item .text h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
@@ -242,83 +242,27 @@ span{
   font-weight: bold;
 }
 
-/* Contact Me */
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-  background-color: #3F2E3E;
-  color: #FFDFD6;
-}
-
-.title-container {
-  background-color: #3F2E3E;
-  width: 100%;
-  height: 100px;
-  color: #FFDFD6;
-  text-align: center;
-}
-
-.title-container h1 {
-  font-weight: normal;
-  font-family: "Rubik Vinyl", serif;
-  font-size: 4rem;
-  padding: 10px;
-}
-
-/* Main Contact Section */
-.contact {
+/*Contact me*/
+.contact-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #FFDFD6;
-  gap: 20px;
-  padding: 20px;
-  align-items: start;
-  height: 100vh;
-}
-
-/* Contact Item Styling */
-.contact-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  border-radius: 10px;
-  color:  #3F2E3E;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height:550px;
-}
-
-.contact-item h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  font-family: "Rubik Vinyl", serif;
-}
-
-.contact-item h3 {
-  font-size: 2rem;
-  margin-top:10px;
-  margin-bottom: 10px;
-  font-family: "Baskervville", serif;
-}
-
-.contact-item a {
-  margin: 10px 0;
-  color:  #3F2E3E;;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.contact-item a img {
-  width: 50px;
+  margin-top: 10px;
   margin-right: 10px;
+  grid-template-columns: 0.14fr 1fr;
 }
-.contact-item > div{
-  margin-bottom:20px;
-  display:grid;
-  grid-template-columns: 0.2fr 1fr;
+
+.contact-content img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
 }
+
+.contact-content a,
+p {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #3F2E3E;
+}
+
 @media (max-width: 768px) {
   .menu-icon {
     display: inline-flex;
@@ -330,16 +274,12 @@ span{
     left: 0;
     width: 100%;
     height: auto;
-    /* Allow the navbar to adjust height automatically */
     background: #3F2E3E;
     flex-direction: column;
     display: none;
-    /* Hidden by default on small screens */
     padding: 1rem 0;
-    /* Add padding to the entire navbar */
   }
 
-  /* When Checkbox is Checked, Show Navbar */
   .menu-toggle:checked~.navbar {
     display: flex;
   }
@@ -348,28 +288,74 @@ span{
     display: inline-block;
     font-size: 1.3rem;
     margin: 1rem 0;
-    text-align: right;
+    text-align: center;
   }
-    .grid-container {
-        grid-template-columns: 1fr; /* Stack the items on smaller screens */
-    }
-    .grid-item {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-    .item {
-      flex-direction: column;
-      text-align: left;
-    }
-  
-    .item img {
-      width: 200px;
-    }
-    .item .text{
-      width:100%;
-    }
-    .item.reverse {
-      flex-direction: column;
-    }
+
+  .Main_container {
+    grid-template-columns: 1fr;
+    background: linear-gradient(180deg, #E3A5C7 60%, #3F2E3E 105%);
+    margin-top: 80px;
+  }
+
+  .text-container {
+    margin-top: 4rem;
+  }
+
+  .skills h1 {
+    font-size: 3rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .grid-item>img {
+    width: 150px;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .grid-item h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .grid-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .text img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .item {
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .container {
+    padding: 2px;
+  }
+
+  .item img {
+    width: 200px;
+  }
+
+  .item .text {
+    width: 100%;
+  }
+
+  .item.reverse {
+    flex-direction: column;
+  }
 
 }
