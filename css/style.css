@@ -136,7 +136,7 @@ span {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center;
   color: #3F2E3E;
 }
 
@@ -245,12 +245,15 @@ span {
 /*Contact me*/
 .contact-content {
   display: grid;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin-top: 10px; 
+  /* margin-right: 10px; */
   grid-template-columns: 0.14fr 1fr;
 }
 .contact{
   padding-top: 30px;
+}
+.align{
+  text-align: left;
 }
 .contact-content img {
   width: 40px;
@@ -361,5 +364,15 @@ p {
   }
   .contact{
     padding-top:10px;
+  }
+  .contact-content{
+    grid-template-columns: 1fr;;
+  }
+  .contact-content img{
+    width:30px;
+    height:30px;
+  }
+  .contact-content a,p{
+    font-size:1rem;
   }
 }
